@@ -73,10 +73,15 @@ public class Ex3ReadNumber {
                 numbers.add(Character.toString(c));
                 before = false;
             } else if (c >= i){
-                while (before){
-                    stop++;
+                if (before == false){
                     break;
+                } else{
+                    while (before){
+                        stop++;
+                        break;
+                    }
                 }
+
 
             }
         }
